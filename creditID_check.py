@@ -1,5 +1,5 @@
 def credit_check(id_arr):
-    print(id_arr)
+    # Check if len(id_arr) is even or odd and apply AKA check digit
     if len(id_arr) % 2 == 0:
         for i in range(0, len(id_arr)-1, 2):
             id_arr[i] = id_arr[i]*2
@@ -10,11 +10,11 @@ def credit_check(id_arr):
             id_arr[i] = id_arr[i]*2
             if id_arr[i] > 9:
                 id_arr[i] -= 9
-
+    # Sum up all the credit number in the credit card
     cc_sum = 0
-    print(id_arr)
     for x in id_arr:
         cc_sum += x
+    # Validate the number
     if cc_sum % 10 == 0:
         return "Valid"
     else:
