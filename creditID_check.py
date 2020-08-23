@@ -19,4 +19,8 @@ def credit_check(id_arr):
         return "Valid"
     else:
         return "Not VALID"
-print(credit_check([3, 7, 5, 7, 9, 6, 0, 8, 4, 4, 5, 9, 9, 1, 4]))
+
+id_arr = []
+# Điền các số credit card của bạn vào trong dưới dạng một list vao trong id_arr
+# Ví dụ: id_arr =[3, 7, 1, 6, 1, 2, 0, 1, 9, 9, 8, 5, 2, 3, 6]
+print(credit_check(id_arr))
